@@ -13,7 +13,7 @@ users = {   "user_1" : "+3 8 098 456 - 71 -23",
 }
 
 for key in users:
-    print(users[key])
+    print(key, " - ", users[key])
 
 
 
