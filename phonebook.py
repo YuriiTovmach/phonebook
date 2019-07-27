@@ -18,16 +18,14 @@ users = {   "user_1" : "80984567123",
 
 # add new phones to base
 new_user = str(input("write down new_user_name:"))
-# if new_user == True:
-#     users.apdate([new_user])
-
-new_phone = int(input("write down new_user_phone:"))
-# if new_phone == True:
-#     users.apdate([new_phone])
+user = new_user.capitalize()
 
 
+new_phone = input("write down new_user_phone:")
+phone = new_phone.replace("", "-")
 
-users.update({new_user : new_phone})
+
+users.update({user : phone})
 
 for key in users:
     print(key, " - ", users[key])
